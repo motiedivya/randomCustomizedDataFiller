@@ -1,0 +1,5 @@
+body { font-family: Arial,sans-serif; margin:0; padding:12px; }
+button { background:#4CAF50; color:#fff; border:none; padding:8px 16px; border-radius:4px; cursor:pointer; }
+button:hover { background:#45A049; }
+input, textarea { width:100%; padding:6px; margin-bottom:8px; border:1px solid #ccc; border-radius:4px; }
+h2 { margin-top:0; }

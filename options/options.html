@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Data‑Filler Profiles</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h2>Profiles</h2>
+  <div id="profileList"></div>
+  <hr>
+
+  <h2 id="formTitle">New Profile</h2>
+  <form id="profileForm">
+    <input type="hidden" id="profileId">
+
+    <label>
+      Name<br>
+      <input type="text" id="profileName" required>
+    </label><br><br>
+
+    <label>
+      URL Patterns (comma‑separated)<br>
+      <input type="text" id="urlPatterns" required>
+    </label><br><br>
+
+    <label>
+      Fields JSON<br>
+      <textarea id="fields" placeholder='[{"selector":"input[name=email]","type":"email","generator":{"strategy":"faker"}}]' rows="5" required></textarea>
+    </label><br><br>
+
+    <button type="submit">Save Profile</button>
+    <button type="button" id="cancelEdit" style="display:none;">Cancel</button>
+  </form>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
